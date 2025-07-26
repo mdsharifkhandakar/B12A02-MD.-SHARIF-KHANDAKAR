@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+/* Font Family Setup */
+.work-sans-fonts {
+  font-family: 'Noto Serif', serif;
+}
+
+/* body common styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 0;
+}
+
+/* Shared Styles */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+.text-primary {
+  color: #e95a08;
+}
+.text-gray {
+  color: #8987a1;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* Navbar Styling */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e95a08;
+}
+
+.nav-link i {
+  margin-right: 6px;
+}
+
+/*Banner Section */
+.banner {
+  align-items: flex-end;
+  margin-top: 120px;
+  gap: 30px;
+}
+
+.banner-content {
+  flex: 1;
+  text-align: left;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-description {
+  font-size: 1.5rem;
+}
+.banner-image {
+  flex: 1;
+  width: 100%;
+}
+
+/* Responsive: Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .nav-item:nth-child(1),
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3),
+  .badge-menu {
+    display: none;
+  }
+
+  /* Banner Section */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 16px;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 1.4rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+
+  .banner-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
