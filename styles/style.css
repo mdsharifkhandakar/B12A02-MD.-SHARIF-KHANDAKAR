@@ -104,6 +104,82 @@ body {
   width: 100%;
 }
 
+/*Plants Section */
+.plants {
+  text-align: center;
+  padding-top: 80px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.plants h2 {
+  font-size: 3.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.plants p {
+  font-size: 20px;
+  padding-bottom: 25px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #e95a08;
+  color: white;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #d64c0f;
+}
+
 /* Responsive: Mobile (max-width: 576px) */
 @media (max-width: 576px) {
   .nav-item:nth-child(1),
@@ -138,5 +214,47 @@ body {
   .banner-image {
     width: 100%;
     margin-bottom: 20px;
+  }
+  /* Plants Section */
+  .plants {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .plants h2 {
+    font-size: 1.4rem;
+  }
+
+  .plants p {
+    font-size: 1rem;
+    padding: 0 16px 24px;
+    line-height: 1.6;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 16px;
+  }
+
+  .card {
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .card button {
+    width: 100%;
+    font-size: 0.85rem;
+    height: 42px;
   }
 }
